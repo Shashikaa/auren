@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
-    "start": "next start"
+    "start": "next start",
+    "test": "node --test tests/routes.test.mjs",
+    "test:browser": "node tests/visual-smoke.mjs && node tests/inner-motion.mjs && node tests/heading-reveals.mjs"
   },
   "dependencies": {
     "next": "16.4.3",
     "react": "19.2.4",
     "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.16.0"
   }
 }

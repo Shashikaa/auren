@@ -1,4 +1,4 @@
-import MotionLoader from './MotionLoader';
+import HomeMotion from "./components/motion/HomeMotion";
 import {
   Entrance,
   MainNavigation,
@@ -6,7 +6,7 @@ import {
   SiteFooter,
   SiteHeader,
   SkipLink,
-} from './components/SiteChrome';
+} from "./components/layout/SiteChrome";
 import {
   CollectionSection,
   FinalCtaSection,
@@ -15,8 +15,8 @@ import {
   PrinciplesSection,
   ServiceIntroSection,
   ServicesSection,
-} from './components/HomeSections';
-import Dialogs from './components/Dialogs';
+} from "./components/home/HomeSections";
+import Dialogs from "./components/dialogs/Dialogs";
 
 export default function Home() {
   return (
@@ -52,7 +52,7 @@ export default function Home() {
         <PageProgress />
         <Dialogs />
       </div>
-      <MotionLoader />
+      <HomeMotion />
     </>
   );
 }
